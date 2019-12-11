@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.App-Wrapper {
+    margin: 100px auto;
+    width: 50%;
+    text-align: center;
+}
+
+.App-List {
+    margin: 20px auto;
+    padding: 10px 10px 30px 10px;
+    background: whitesmoke;
+    border-radius: 10px;
+    overflow: auto;
+    max-height: 450px;
+    animation: fadeIn .3s ease;
+
+    li {
+        background: #fff;
+    }
+
+    .done {
+        transition: all .4s ease;
+        background: #dcdcdc;
+    
+        p {
+            text-decoration: line-through;
+        }
+    }
+}
+
+.App-Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn .3s linear;
+
+    & > i {
+        height: 54px;
+        width: 54px;
+        font-size: 54px;
+        margin: 0px 15px 0px 0px;
+        color: #2B7195;
+        text-anchor: start;
+        animation: spin infinite 3s linear;
+    }
+
+    & > button {
+        margin: 10px 0px 0px 30px;
+    }
+}
+
+.App-Loader {
+    padding: 45px;
+
+    & > i {
+        height: 60px;
+        width: 60px;
+        font-size: 60px;
+        margin: 0px 15px 0px 0px;
+        color: #2B7195;
+        text-anchor: start;
+        animation: spin infinite 1s linear;
+    }
+}
+
+h1 {
+    font-size: 54px;
+    background: url('https://www.ctvalleybrewing.com/wp-content/uploads/2018/06/home-bg-new.jpg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+button, input {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.form {
+    margin: 30px auto 10px auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn .3s ease;
+}
+
+.form-input {
+    background: #fff;
+    border-radius: 20px;
+    height: 35px;
+    width: 250px;
+    border: 1px solid #dcdcdc;
+    text-indent: 12px;
+    transition: all .3s ease;
+    margin: 0px 30px 0px 0px;
+    font-size: 18px;
+
+    &:focus {
+        outline: none;
+        border: 1px solid navy;
+        filter: drop-shadow(0px 0px 1px aqua);
+    }
+}
+
+.form-button {
+    background: #164C66;
+    height: 35px;
+    width: 120px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease;
+    font-size: 18px;
+
+    &:hover {
+        background: darken($color: #164C66, $amount: 5);
+    }
+}
+
+.del-button {
+    background: crimson;
+    transition: all .4s ease;
+
+    &:hover {
+        background: darken($color: crimson, $amount: 10);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+      -webkit-transform: translate3d(-20%, 0, 0);
+      transform: translate3d(-20%, 0, 0);
+      visibility: visible;
+      filter: blur(1px);
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      filter: blur(0px);
+    }
+  }

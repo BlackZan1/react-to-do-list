@@ -1,0 +1,75 @@
+.Modal-btn {
+    background: #164C66;
+    border: 1px solid;
+    width: 100px;
+    height: 45px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    
+    &:hover {
+        background: darken($color: #164C66, $amount: 5);
+    }
+}
+
+.Modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: fadeIn .5s ease;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.Modal-body {
+    background: #fff;
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    position: absolute;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    animation: slideToRight 2s ease;
+    transform: translate(-50%, -50%);
+
+    .Modal-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 10px 0px 10px;
+    
+        & > h1 {
+            margin: 0px 0px 20px 0px;
+        }
+
+        & > p {
+            font-size: 20px;
+            align-self: flex-end;
+            margin: 20px 0px 10px 0px;
+            font-weight: 500;
+            color: tomato;
+        }
+    }
+}
+
+@keyframes slideToRight {
+    0% {
+        right: 1000%;
+    }
+    100% {
+        right: 50%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
