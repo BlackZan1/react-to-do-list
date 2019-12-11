@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/NazarsToDOList/static/css/main.519ad0ab.chunk.css",
+    "main.js": "/NazarsToDOList/static/js/main.08c12b3a.chunk.js",
+    "main.js.map": "/NazarsToDOList/static/js/main.08c12b3a.chunk.js.map",
+    "runtime-main.js": "/NazarsToDOList/static/js/runtime-main.678c5cad.js",
+    "runtime-main.js.map": "/NazarsToDOList/static/js/runtime-main.678c5cad.js.map",
+    "static/js/2.188229b4.chunk.js": "/NazarsToDOList/static/js/2.188229b4.chunk.js",
+    "static/js/2.188229b4.chunk.js.map": "/NazarsToDOList/static/js/2.188229b4.chunk.js.map",
+    "static/js/3.6a8fa88c.chunk.js": "/NazarsToDOList/static/js/3.6a8fa88c.chunk.js",
+    "static/js/3.6a8fa88c.chunk.js.map": "/NazarsToDOList/static/js/3.6a8fa88c.chunk.js.map",
+    "index.html": "/NazarsToDOList/index.html",
+    "precache-manifest.36141ea78b61dbc5139ae97d71390685.js": "/NazarsToDOList/precache-manifest.36141ea78b61dbc5139ae97d71390685.js",
+    "service-worker.js": "/NazarsToDOList/service-worker.js",
+    "static/css/main.519ad0ab.chunk.css.map": "/NazarsToDOList/static/css/main.519ad0ab.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.678c5cad.js",
+    "static/js/2.188229b4.chunk.js",
+    "static/css/main.519ad0ab.chunk.css",
+    "static/js/main.08c12b3a.chunk.js"
+  ]
+}
