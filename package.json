@@ -2,6 +2,7 @@
   "name": "to-do-list",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://blackzan1.github.io/NazarsToDOList/",
   "dependencies": {
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.27",
@@ -16,6 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
