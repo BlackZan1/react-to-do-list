@@ -2,7 +2,7 @@
   "name": "to-do-list",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://blackzan1.github.io/NazarsToDOList/",
+  "homepage": "https://blackzan1.github.io/react-to-do-list/",
   "dependencies": {
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.27",
